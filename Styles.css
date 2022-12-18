@@ -24,6 +24,21 @@ body{
     background-size: cover;
     margin: auto;
 }
+#bg{
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-bottom: 100%;
+    opacity: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #ffffff;
+    position: absolute;
+    /* display: none; */
+    z-index: -1;
+    transition: 0.2s;
+
+}
 .headerh{
     padding-top: 12%;
 
@@ -32,7 +47,7 @@ body{
     background-image: url(Header.png);
 
     background-repeat: no-repeat;
-    transition: 0.5s;
+    transition: 0.2s;
 }
 
 div.headerh:hover{
@@ -53,47 +68,42 @@ li,a{
     font-weight: 1000;
     color: #5B2676;
     text-decoration: none;
+    transition: 0.2s;
 }
 li,a:hover{
     
     font-family: "Mm", sans-serif;
     font-weight: 100;
     color: #ffffff;
-    text-shadow: 2px 2px 4px #000000;
-    
+    text-decoration: none;  
 }
-
-
-div#headertexts{
-    
+a.headlinetexts:hover{
+    text-shadow: 1px 1px 2px black, 0 0 25px rgb(191, 27, 194), 0 0 5px rgb(217, 0, 255);
+}
+div#headertexts{ 
     display: flex;
     align-items: center;
     /* background-color: #DE9CFD; */
-
 }
-
 ul{
     padding: 0;
     margin: auto;
     /* background-color: #DE9CFD; */
 }
 li{
-   
     display: inline-block;
     padding: 10px  20px ;
     /* background-color: #5B2676; */
 }
-
 #Logo{
 display: flex;
-
 }
 #Logoimg{
     
     margin-top:5%;
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 50%;
     height: auto;
 }
 #Search{
@@ -101,34 +111,33 @@ display: flex;
     padding-top: 5%;
     padding-bottom: 50%;
     }
-
 #goto{
     /* background-color: #DE9CFD; */
-    width: 90%;
+    width: 70%;
     padding-left: 2%;
     margin: auto;
     display: inline-block;
     font-family: "Mr";
-    font-size: 2.5vw;
+    font-size: 1.5vw;
     letter-spacing: 0.49em;
     font-weight: 50;
     text-align: center;
     color: rgb(255, 255, 255);
     transition: 0.2s;
 }
-
 #goto:hover{
     /* background-color: #DE9CFD; */
-    width: 90%;
+    width: 80%;
     padding-left: 2%;
     margin: auto;
     display: inline-block;
     font-family: "Mr";
-    font-size: 2.5vw;
+    font-size: 2vw;
     letter-spacing: 0.49em;
     font-weight: 50;
     text-align: center;
     color: #5B2676;
-
 }
-
+#goto:hover #bg{
+    opacity: 0.5;
+}
