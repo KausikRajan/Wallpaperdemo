@@ -16,6 +16,10 @@
     font-family: "Mr";
     src: url(Fonts/MONTSERRAT-REGULAR.TTF);
 }
+@font-face {
+    font-family: "Ml";
+    src: url(Fonts/MONTSERRAT-LIGHT.TTF);
+}
 body{
 
     background: linear-gradient(180deg, #DE9CFD 0%, #7D42A8 100%, #7D42A8 100%);
@@ -32,7 +36,7 @@ body{
     opacity: 0;
     height: 100%;
     width: 100%;
-    background-color: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, rgba(222, 172, 245, 0) 100%);
     position: absolute;
     /* display: none; */
     z-index: -1;
@@ -55,6 +59,7 @@ div.headerh:hover{
     background-size: 100%;
     background-image: url(Headerhovered.png);
     background-repeat: no-repeat;
+
 }
 .bodybg{
     height: fit-content;
@@ -140,4 +145,46 @@ display: flex;
 }
 #goto:hover #bg{
     opacity: 0.5;
+}
+
+.row{
+padding-left: 10%;
+padding-right: 10%;
+}
+.card-title{
+    font-family: "Mm";
+    font-size:1.5vw;
+    text-align: center;
+    color:#DE9CFD;
+    text-shadow: 0 5px 5px black;
+}
+.row{
+    padding-bottom: 20px;
+}
+.card{
+    background: linear-gradient(180deg, #DE9CFD 30%, #0E0016 100%);
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1{
+    font-family: "Mm";
+    text-align: center;
+    padding-bottom: 5%;
+}
+h6{
+    font-family: "Ml";
+    font-size: 2vw;
+    font-weight: 700;
+    padding-bottom: 5;
+}
+.row{
+    display: flex;
+}
+
+.titlecat{
+    padding-left: 10%;
+}
+.none{
+    display: none;
 }
